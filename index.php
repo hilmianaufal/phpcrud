@@ -20,7 +20,9 @@ $santri = query('SELECT * FROM santri');
   </head>
   <body>
     <h1>Data Santri</h1>
+    
     <div class="container">
+      <a href="tambah.php" class="btn btn-info">Tambah Data</a>
     <table class="table table-striped" border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>No</th>
