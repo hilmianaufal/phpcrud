@@ -27,9 +27,9 @@ $san = query("SELECT * FROM santri WHERE id=$id")[0];
         <li>Nomer Hp : <?= $san['nohp'] ?></li>
     </ul>
     <div class="button">
-        <a href="" class="btn btn-success">Edit</a>
+        <a href="edit.php?id=<?= $san['id'] ?>" class="btn btn-success">Edit</a>
         <a href="index.php" class="btn btn-primary" > Kembali </a>
-        <a href="" class="btn btn-danger">Hapus</a>
+        <a href="hapus.php?id=<?=$san['id'] ?>" onclick= "return alert('Apakah Yakin Mau Di Hapus?')" class="btn btn-danger">Hapus</a>
     </div>
 </div>
 </body>
